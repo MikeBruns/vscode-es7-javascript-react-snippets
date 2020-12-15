@@ -1278,6 +1278,24 @@
     "body": "PropTypes.any,",
     "description": "Any prop type"
   },
+  "filePropTypes": {
+    "prefix": "fpt",
+    "body": [
+      "${1:${TM_FILENAME_BASE}}.propTypes = {",
+      "\t$2",
+      "}"
+    ],
+    "description": "Creates a propType object for the current file"
+  },
+  "fileDefaultProps": {
+    "prefix": "fdpt",
+    "body": [
+      "${1:${TM_FILENAME_BASE}}.defaultProps = {",
+      "\t$2",
+      "}"
+    ],
+    "description": "Creates a defaultProps object for the current file"
+  },
   "Comment Big Block": {
     "prefix": "cmmb",
     "body": ["/**", " * ${0}", " */"]
